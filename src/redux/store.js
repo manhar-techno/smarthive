@@ -1,8 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { dashboardReducers } from "./slices/DashboardSlice";
+import { rootReducer } from "./reducers/rootReducer";
 
 export const store = configureStore({
-  reducer: {
-    dashboard: dashboardReducers,
-  },
+  reducer: rootReducer,
 });
+// the store is passed down to Provider located in src/index.js

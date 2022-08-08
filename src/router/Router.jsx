@@ -15,6 +15,7 @@ const Router = () => {
           ></Route>
         );
       })}
+      {/* in case the path of user is not defined  */}
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
