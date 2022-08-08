@@ -7,7 +7,7 @@ const Dashboard = () => {
   const count = useSelector((state) => state.dashboard.count);
   return (
     <div>
-      <h1>Dashboard</h1>
+      <h1 className="invisible">Dashboard</h1>
       <div>{count}</div>
       <button onClick={() => dispatch(increment())}>Click</button>
     </div>
